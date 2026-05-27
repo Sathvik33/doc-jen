@@ -8,6 +8,12 @@ app.get("/", (req, res) => {
     })
 });
 
+app.get("/health", (req, res) => {
+    res.send({
+        "Message": "Healthy"
+    })
+});
+
 app.listen(3000, () => {
     console.log("Server is Running")
 });
